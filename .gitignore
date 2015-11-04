@@ -1,28 +1,24 @@
-# Compiled Object files
+.cproject
+.project
+.settings
+.wrmakefile
+Debug/*
+.metadata
+.metadata/*
+build.properties
+build.xml
+
+#compiled object files
 *.slo
 *.lo
 *.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+#Compiled Dynamic libs
 *.so
 *.dylib
-*.dll
 
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
+#compiled static libraries
 *.lai
 *.la
 *.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+/Debug/
