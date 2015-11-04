@@ -1,0 +1,31 @@
+# see also http://www.gitguys.com/topics/git-and-remote-repositories/
+#
+# repo on taz initially created by:  git init --bare minibuild-2015.git
+
+#in case you have something incorrect
+git remote remove taz
+
+# depending on your OS the FILE url will be slightly different
+
+# use df to figure out the path to the usb drive
+
+# linux 
+git remote add taz file:///<fspath>/repos/minibuild-2015.git
+
+# windows with cygwin
+git remote add taz file:///cygdrive/e/repos/minibuild-2015.git
+
+# windows with gitbash shell.
+git remote add taz file:///media/taz/repos/minibuild-2015.git
+
+# mac
+git remote add taz file:///Volumes/TAZ/repos/minibuild-2015.git
+
+# test pull from the remote
+git pull taz master
+
+# to push your changes to the usb drive repo (assuming master branch)
+git push taz myWorkBranck
+
+# get the things from taz without syncing current checked out branch
+git fetch taz
